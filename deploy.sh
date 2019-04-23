@@ -1,6 +1,6 @@
-docker build -t thetalorian/md-client:latest -t thetalorian/md-client:$SHA ./client/Dockerfile ./client
-docker build -t thetalorian/md-server:latest -t thetalorian/md-server:$SHA ./server/Dockerfile ./server
-docker build -t thetalorian/md-worker:latest -t thetalorian/md-worker:$SHA ./worker/Dockerfile ./worker
+docker build -t thetalorian/md-client:latest -t thetalorian/md-client:$SHA -f ./client/Dockerfile ./client
+docker build -t thetalorian/md-server:latest -t thetalorian/md-server:$SHA -f ./server/Dockerfile ./server
+docker build -t thetalorian/md-worker:latest -t thetalorian/md-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push thetalorian/md-client:latest
 docker push thetalorian/md-server:latest
 docker push thetalorian/md-worker:latest
