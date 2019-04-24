@@ -30,7 +30,7 @@ spec:
           - name: PGUSER
             value: postgres
           - name: PGHOST
-            value: postgres-clusterip
+            value: postgres-clusterip-service
           - name: PGPORT
             value: '5432'
           - name: PGDATABASE
